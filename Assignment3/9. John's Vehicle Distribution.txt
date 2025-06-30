@@ -1,0 +1,7 @@
+def vehicle_distribution(m, n):
+    per_child = m // n
+    remaining = m % n
+    luck = "Peter is luckier" if remaining % 2 == 0 else "Peter is not lucky"
+    return remaining, luck
+
+print(vehicle_distribution(10, 3))  # Output: (1, 'Peter is not lucky')

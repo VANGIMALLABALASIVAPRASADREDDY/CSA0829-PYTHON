@@ -1,0 +1,5 @@
+import string
+
+text = "Modi Birthday @ September 17, #&$% is the wishes code for him."
+specials = [ch for ch in text if not ch.isalnum() and not ch.isspace()]
+print(f"Number of special Characters: {len(specials)}")  # Output: 5

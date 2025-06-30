@@ -1,0 +1,7 @@
+from collections import Counter
+
+arr = [1, 3, 1, 3, 2, 1]
+freq = Counter(arr)
+element, max_freq = max(freq.items(), key=lambda x: x[1])
+print(freq)
+print(f"Max frequency element: {element}, Frequency: {max_freq}")

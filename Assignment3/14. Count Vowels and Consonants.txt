@@ -1,0 +1,8 @@
+def count_vowels_consonants(s):
+    vowels = "aeiouAEIOU"
+    v = sum(1 for ch in s if ch.isalpha() and ch in vowels)
+    c = sum(1 for ch in s if ch.isalpha() and ch not in vowels)
+    print(f"Number of vowels = {v} Number of Consonants = {c}")
+    print("Vowels are more" if v > c else "Consonants are more")
+
+count_vowels_consonants("Saveetha School of Engineering Sample")

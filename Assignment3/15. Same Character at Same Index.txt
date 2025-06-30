@@ -1,0 +1,5 @@
+def same_index_match(s1, s2):
+    matches = sum(1 for a, b in zip(s1, s2) if a == b)
+    return matches
+
+print(same_index_match("what", "watch"))  # Output: 1
